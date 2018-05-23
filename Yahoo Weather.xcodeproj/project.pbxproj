@@ -13,6 +13,7 @@
 		B260232320B61F2700322CEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B260232220B61F2700322CEA /* Assets.xcassets */; };
 		B260232620B61F2700322CEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B260232420B61F2700322CEA /* LaunchScreen.storyboard */; };
 		B260233120B61F2700322CEA /* Yahoo_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B260233020B61F2700322CEA /* Yahoo_WeatherTests.swift */; };
+		B260233E20B61F7B00322CEA /* YQL.m in Sources */ = {isa = PBXBuildFile; fileRef = B260233D20B61F7B00322CEA /* YQL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,9 @@
 		B260232C20B61F2700322CEA /* Yahoo WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yahoo WeatherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B260233020B61F2700322CEA /* Yahoo_WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yahoo_WeatherTests.swift; sourceTree = "<group>"; };
 		B260233220B61F2700322CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B260233B20B61F7A00322CEA /* Yahoo Weather-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yahoo Weather-Bridging-Header.h"; sourceTree = "<group>"; };
+		B260233C20B61F7B00322CEA /* YQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQL.h; sourceTree = "<group>"; };
+		B260233D20B61F7B00322CEA /* YQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQL.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +83,13 @@
 			children = (
 				B260231B20B61F2600322CEA /* AppDelegate.swift */,
 				B260231D20B61F2600322CEA /* ViewController.swift */,
+				B260233C20B61F7B00322CEA /* YQL.h */,
+				B260233D20B61F7B00322CEA /* YQL.m */,
 				B260231F20B61F2600322CEA /* Main.storyboard */,
 				B260232220B61F2700322CEA /* Assets.xcassets */,
 				B260232420B61F2700322CEA /* LaunchScreen.storyboard */,
 				B260232720B61F2700322CEA /* Info.plist */,
+				B260233B20B61F7A00322CEA /* Yahoo Weather-Bridging-Header.h */,
 			);
 			path = "Yahoo Weather";
 			sourceTree = "<group>";
@@ -146,6 +153,7 @@
 				TargetAttributes = {
 					B260231720B61F2500322CEA = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
 					};
 					B260232B20B61F2700322CEA = {
 						CreatedOnToolsVersion = 9.3.1;
@@ -197,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B260233E20B61F7B00322CEA /* YQL.m in Sources */,
 				B260231E20B61F2600322CEA /* ViewController.swift in Sources */,
 				B260231C20B61F2600322CEA /* AppDelegate.swift in Sources */,
 			);
@@ -358,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Yahoo Weather/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -366,6 +376,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "pt.luis.Yahoo-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Yahoo Weather/Yahoo Weather-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -375,6 +387,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Yahoo Weather/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -383,6 +396,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "pt.luis.Yahoo-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Yahoo Weather/Yahoo Weather-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
