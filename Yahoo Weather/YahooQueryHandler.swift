@@ -13,7 +13,7 @@ class YahooQueryHandler {
     let yql = YQL()
     
     func query(location: CLLocation) {
-        let results = yql.query("select * from weather.forecast where woeid in (SELECT woeid FROM geo.places WHERE text=\"(\(location.coordinate.latitude), \(location.coordinate.longitude))\")")
+        let results = yql.query("select * from weather.forecast where u='c' and woeid in (SELECT woeid FROM geo.places WHERE text=\"(\(location.coordinate.latitude), \(location.coordinate.longitude))\")")
         print(results as Any)
     }
 }
