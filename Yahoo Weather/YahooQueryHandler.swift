@@ -7,12 +7,13 @@
 //
 
 import Foundation
+import CoreLocation
 
 class YahooQueryHandler {
+    let yql = YQL()
     
-    func query() {
-        let yql = YQL.init()
-        let results = yql.query("SELECT * FROM weather.forecast WHERE woeid=2502265")
+    func query(location: CLLocation) {
+        let results = yql.query("select * from weather.forecast where woeid in (SELECT woeid FROM geo.places WHERE text=\"(\(location.coordinate.latitude), \(location.coordinate.longitude))\")")
         print(results as Any)
     }
 }

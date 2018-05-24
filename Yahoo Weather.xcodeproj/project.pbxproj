@@ -86,8 +86,7 @@
 				B260231B20B61F2600322CEA /* AppDelegate.swift */,
 				B260231D20B61F2600322CEA /* ViewController.swift */,
 				B260233F20B61FED00322CEA /* YahooQueryHandler.swift */,
-				B260233C20B61F7B00322CEA /* YQL.h */,
-				B260233D20B61F7B00322CEA /* YQL.m */,
+				B260234120B6C5F500322CEA /* ExternalDependencies */,
 				B260231F20B61F2600322CEA /* Main.storyboard */,
 				B260232220B61F2700322CEA /* Assets.xcassets */,
 				B260232420B61F2700322CEA /* LaunchScreen.storyboard */,
@@ -104,6 +103,15 @@
 				B260233220B61F2700322CEA /* Info.plist */,
 			);
 			path = "Yahoo WeatherTests";
+			sourceTree = "<group>";
+		};
+		B260234120B6C5F500322CEA /* ExternalDependencies */ = {
+			isa = PBXGroup;
+			children = (
+				B260233C20B61F7B00322CEA /* YQL.h */,
+				B260233D20B61F7B00322CEA /* YQL.m */,
+			);
+			path = ExternalDependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
