@@ -8,7 +8,7 @@
 
 #import "YQL.h"
 
-#define QUERY_PREFIX @"http://query.yahooapis.com/v1/public/yql?q="
+#define QUERY_PREFIX @"https://query.yahooapis.com/v1/public/yql?q="
 #define QUERY_SUFFIX @"&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback="
 
 @implementation YQL
