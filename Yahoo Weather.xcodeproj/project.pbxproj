@@ -14,6 +14,7 @@
 		B260232620B61F2700322CEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B260232420B61F2700322CEA /* LaunchScreen.storyboard */; };
 		B260233120B61F2700322CEA /* Yahoo_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B260233020B61F2700322CEA /* Yahoo_WeatherTests.swift */; };
 		B260233E20B61F7B00322CEA /* YQL.m in Sources */ = {isa = PBXBuildFile; fileRef = B260233D20B61F7B00322CEA /* YQL.m */; };
+		B260234020B61FED00322CEA /* YahooQueryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B260233F20B61FED00322CEA /* YahooQueryHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		B260233B20B61F7A00322CEA /* Yahoo Weather-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yahoo Weather-Bridging-Header.h"; sourceTree = "<group>"; };
 		B260233C20B61F7B00322CEA /* YQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQL.h; sourceTree = "<group>"; };
 		B260233D20B61F7B00322CEA /* YQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQL.m; sourceTree = "<group>"; };
+		B260233F20B61FED00322CEA /* YahooQueryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooQueryHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				B260231B20B61F2600322CEA /* AppDelegate.swift */,
 				B260231D20B61F2600322CEA /* ViewController.swift */,
+				B260233F20B61FED00322CEA /* YahooQueryHandler.swift */,
 				B260233C20B61F7B00322CEA /* YQL.h */,
 				B260233D20B61F7B00322CEA /* YQL.m */,
 				B260231F20B61F2600322CEA /* Main.storyboard */,
@@ -207,6 +210,7 @@
 			files = (
 				B260233E20B61F7B00322CEA /* YQL.m in Sources */,
 				B260231E20B61F2600322CEA /* ViewController.swift in Sources */,
+				B260234020B61FED00322CEA /* YahooQueryHandler.swift in Sources */,
 				B260231C20B61F2600322CEA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
