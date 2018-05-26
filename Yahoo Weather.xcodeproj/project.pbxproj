@@ -15,6 +15,7 @@
 		B260233120B61F2700322CEA /* Yahoo_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B260233020B61F2700322CEA /* Yahoo_WeatherTests.swift */; };
 		B260233E20B61F7B00322CEA /* YQL.m in Sources */ = {isa = PBXBuildFile; fileRef = B260233D20B61F7B00322CEA /* YQL.m */; };
 		B260234020B61FED00322CEA /* YahooQueryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B260233F20B61FED00322CEA /* YahooQueryHandler.swift */; };
+		B260234320BA124900322CEA /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B260234220BA124900322CEA /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		B260233C20B61F7B00322CEA /* YQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQL.h; sourceTree = "<group>"; };
 		B260233D20B61F7B00322CEA /* YQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQL.m; sourceTree = "<group>"; };
 		B260233F20B61FED00322CEA /* YahooQueryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooQueryHandler.swift; sourceTree = "<group>"; };
+		B260234220BA124900322CEA /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				B260231B20B61F2600322CEA /* AppDelegate.swift */,
 				B260231D20B61F2600322CEA /* ViewController.swift */,
 				B260233F20B61FED00322CEA /* YahooQueryHandler.swift */,
+				B260234220BA124900322CEA /* Weather.swift */,
 				B260234120B6C5F500322CEA /* ExternalDependencies */,
 				B260231F20B61F2600322CEA /* Main.storyboard */,
 				B260232220B61F2700322CEA /* Assets.xcassets */,
@@ -220,6 +223,7 @@
 				B260231E20B61F2600322CEA /* ViewController.swift in Sources */,
 				B260234020B61FED00322CEA /* YahooQueryHandler.swift in Sources */,
 				B260231C20B61F2600322CEA /* AppDelegate.swift in Sources */,
+				B260234320BA124900322CEA /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,23 +13,42 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
     let manager = CLLocationManager()
     let yql = YahooQueryHandler()
+    var weather: Weather?
+    
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var tempertureLabel: UILabel!
+    @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var activityIndicatior: UIActivityIndicatorView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         manager.delegate = self
         manager.requestWhenInUseAuthorization()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        activityIndicatior.startAnimating()
         manager.requestLocation()
+    }
+    
+    func updateUI() {
+        guard let weather = self.weather else {
+            // print error
+            return
+        }
+        activityIndicatior.stopAnimating()
+        descriptionLabel.text = weather.description
+        tempertureLabel.text = "\(weather.temp)ºC"
+        textLabel.text = weather.text
     }
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
             print("Found user's location: \(location)")
-            yql.query(location: location)
+            weather = yql.getWeather(location: location)
+            updateUI()
         }
     }
     
