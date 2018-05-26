@@ -50,24 +50,49 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="w5F-Yw-xVS">
                                 <rect key="frame" x="177" y="323" width="20" height="20"/>
                             </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XbP-DE-ZlF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="YAHOO WEATHER APP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qI-FK-3Y0">
+                                        <rect key="frame" x="98.5" y="323" width="177.5" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="n8W-t7-ugo"/>
+                                            <constraint firstAttribute="width" priority="750" constant="42" id="uGq-O2-udL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="0qI-FK-3Y0" firstAttribute="centerY" secondItem="XbP-DE-ZlF" secondAttribute="centerY" id="N6N-I7-jF8"/>
+                                    <constraint firstItem="0qI-FK-3Y0" firstAttribute="centerX" secondItem="XbP-DE-ZlF" secondAttribute="centerX" id="u5j-Eq-4jN"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="w5F-Yw-xVS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Mi-YJ-r0U"/>
                             <constraint firstItem="cGe-Oh-YP7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ef6-em-JBq"/>
                             <constraint firstItem="cGe-Oh-YP7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="I6d-Y9-b8H"/>
+                            <constraint firstItem="XbP-DE-ZlF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PNs-2M-GsX"/>
                             <constraint firstItem="w5F-Yw-xVS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Tbl-rq-OTa"/>
                             <constraint firstItem="ty1-MA-ATR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aV1-a9-GEw"/>
+                            <constraint firstItem="XbP-DE-ZlF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cMh-DU-8KE"/>
                             <constraint firstItem="ty1-MA-ATR" firstAttribute="top" secondItem="cGe-Oh-YP7" secondAttribute="bottom" constant="8" id="d02-1L-Tts"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QCo-F2-aei" secondAttribute="trailing" constant="16" id="ebR-Hy-WPt"/>
                             <constraint firstItem="QCo-F2-aei" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="11" id="etK-sy-Pak"/>
+                            <constraint firstItem="XbP-DE-ZlF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="h9y-2d-vis"/>
                             <constraint firstItem="QCo-F2-aei" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jVV-ft-2uF"/>
+                            <constraint firstItem="XbP-DE-ZlF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mqs-Rb-xXU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="activityIndicatior" destination="w5F-Yw-xVS" id="gZI-mL-oTk"/>
                         <outlet property="descriptionLabel" destination="QCo-F2-aei" id="XHa-AB-Grr"/>
+                        <outlet property="hidingView" destination="XbP-DE-ZlF" id="ldI-iY-BlQ"/>
                         <outlet property="tempertureLabel" destination="cGe-Oh-YP7" id="U5D-yY-BuJ"/>
                         <outlet property="textLabel" destination="ty1-MA-ATR" id="7Fk-gb-aOX"/>
                     </connections>

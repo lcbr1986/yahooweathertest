@@ -19,23 +19,29 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var tempertureLabel: UILabel!
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var activityIndicatior: UIActivityIndicatorView!
+    @IBOutlet weak var hidingView: UIView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.showContents), name: .UIApplicationWillEnterForeground, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.hideContents), name: .UIApplicationDidEnterBackground, object: nil)
+        
         manager.delegate = self
         manager.requestWhenInUseAuthorization()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        hidingView.alpha = 0
         activityIndicatior.startAnimating()
         manager.requestLocation()
     }
     
     func updateUI() {
         guard let weather = self.weather else {
-            // print error
+            print("Error")
             return
         }
         activityIndicatior.stopAnimating()
@@ -44,6 +50,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         textLabel.text = weather.text
     }
 
+    @objc func showContents() {
+        hidingView.alpha = 0
+    }
+    
+    @objc func hideContents() {
+        hidingView.alpha = 1
+    }
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
             print("Found user's location: \(location)")
