@@ -12,7 +12,7 @@ import CoreLocation
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
     let manager = CLLocationManager()
-    let yql = YahooQueryHandler()
+    var yql = YahooQueryHandler()
     var weather: Weather?
     
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -61,8 +61,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
             print("Found user's location: \(location)")
-            weather = yql.getWeather(location: location)
-            updateUI()
+            getWeather(location: location)
         }
     }
     
@@ -70,6 +69,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         print("Failed to find user's location: \(error.localizedDescription)")
     }
 
-
+    func getWeather(location: CLLocation) {
+        weather = yql.getWeather(location: location)
+        updateUI()
+    }
+    
 }
 

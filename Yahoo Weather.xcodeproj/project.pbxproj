@@ -12,10 +12,11 @@
 		B260232120B61F2600322CEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B260231F20B61F2600322CEA /* Main.storyboard */; };
 		B260232320B61F2700322CEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B260232220B61F2700322CEA /* Assets.xcassets */; };
 		B260232620B61F2700322CEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B260232420B61F2700322CEA /* LaunchScreen.storyboard */; };
-		B260233120B61F2700322CEA /* Yahoo_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B260233020B61F2700322CEA /* Yahoo_WeatherTests.swift */; };
 		B260233E20B61F7B00322CEA /* YQL.m in Sources */ = {isa = PBXBuildFile; fileRef = B260233D20B61F7B00322CEA /* YQL.m */; };
 		B260234020B61FED00322CEA /* YahooQueryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B260233F20B61FED00322CEA /* YahooQueryHandler.swift */; };
 		B260234320BA124900322CEA /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B260234220BA124900322CEA /* Weather.swift */; };
+		B260234720BAC6DD00322CEA /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B260234620BAC6DD00322CEA /* ViewControllerTests.swift */; };
+		B260234920BAC92700322CEA /* YahooQueryHandlerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B260234820BAC92700322CEA /* YahooQueryHandlerMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +38,14 @@
 		B260232520B61F2700322CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B260232720B61F2700322CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B260232C20B61F2700322CEA /* Yahoo WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yahoo WeatherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B260233020B61F2700322CEA /* Yahoo_WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yahoo_WeatherTests.swift; sourceTree = "<group>"; };
 		B260233220B61F2700322CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B260233B20B61F7A00322CEA /* Yahoo Weather-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yahoo Weather-Bridging-Header.h"; sourceTree = "<group>"; };
 		B260233C20B61F7B00322CEA /* YQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQL.h; sourceTree = "<group>"; };
 		B260233D20B61F7B00322CEA /* YQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQL.m; sourceTree = "<group>"; };
 		B260233F20B61FED00322CEA /* YahooQueryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooQueryHandler.swift; sourceTree = "<group>"; };
 		B260234220BA124900322CEA /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		B260234620BAC6DD00322CEA /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		B260234820BAC92700322CEA /* YahooQueryHandlerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooQueryHandlerMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +104,8 @@
 		B260232F20B61F2700322CEA /* Yahoo WeatherTests */ = {
 			isa = PBXGroup;
 			children = (
-				B260233020B61F2700322CEA /* Yahoo_WeatherTests.swift */,
+				B260234620BAC6DD00322CEA /* ViewControllerTests.swift */,
+				B260234820BAC92700322CEA /* YahooQueryHandlerMock.swift */,
 				B260233220B61F2700322CEA /* Info.plist */,
 			);
 			path = "Yahoo WeatherTests";
@@ -231,7 +234,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B260233120B61F2700322CEA /* Yahoo_WeatherTests.swift in Sources */,
+				B260234920BAC92700322CEA /* YahooQueryHandlerMock.swift in Sources */,
+				B260234720BAC6DD00322CEA /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
